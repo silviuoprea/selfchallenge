@@ -1,11 +1,9 @@
 # I. Introduction
 
----
 Java application that implements the following operations:
 
 ## 1. Compulsory
 
----
 
 - [x] a. Display on the screen the message "Hello World!". Run the application. If it works, go to step 2 :)
 - [x] b. Define an array of strings languages, containing {"C", "C++", "C#", "Python", "Go", "Rust", "JavaScript", "PHP", "Swift", "Java"}
@@ -26,7 +24,6 @@ Java application that implements the following operations:
 
 ## 2. Optional
 
----
 - [ ] a. Let n, p be two integers and C1,...,Cm a set of letters (the alphabet), all given as a command line arguments. Validate the arguments!
 - [ ] b. Create an array of n strings (called words), each word containing exactly p characters from the given alphabet.
 - [ ] c. Display on the screen the generated array.
@@ -40,9 +37,8 @@ Java application that implements the following operations:
 
 ## 3. Bonus
 
----
 
 - [ ] a. Implement an efficient algorithm that determines, if possible, a subset of distinct words W1,W2,...,Wk (from the ones that you have generated) such that k ≥ 3 and Wi and Wi+1 are neighbors, for all i in [1..k], where Wk+1=W1.
 - [ ] b. Can you find the largest possible k?
-- 
-- #### Proof :
+
+#### Proof :
