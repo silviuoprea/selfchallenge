@@ -24,7 +24,7 @@ Java application that implements the following operations:
 
 ## 2. Optional
 
-- [ ] a. Let n, p be two integers and C1,...,Cm a set of letters (the alphabet), all given as a command line arguments. Validate the arguments!
+- [x] a. Let n, p be two integers and C1,...,Cm a set of letters (the alphabet), all given as a command line arguments. Validate the arguments!
 - [ ] b. Create an array of n strings (called words), each word containing exactly p characters from the given alphabet.
 - [ ] c. Display on the screen the generated array.
 - [ ] d. Two words are neighbors if they have a common letter.
