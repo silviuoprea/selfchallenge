@@ -1,5 +1,6 @@
 package Introduction;
 
+import java.util.Arrays;
 /**
  * I.Optional :
  * Basic java application that handles numerical operations
@@ -35,5 +36,30 @@ public class Optional {
             return false;
         }
         return true;
+    }
+
+    public static String[] generateWords(String[] args) {
+        int n = Integer.parseInt(args[0]);
+        int p = Integer.parseInt(args[1]);
+        int k = 2;
+        String[] words = new String[n];
+        StringBuilder word = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < p; j++) {
+                if (k >= args.length)
+                    k = 2;
+                word.append(args[k]);
+                if (Math.random() > 0.499)
+                    k+=2;
+                else k++;
+            }
+            words[i] = word.toString();
+            word = new StringBuilder();
+        }
+        return words;
+    }
+    public  static void displayArray(String[] input)
+    {
+        System.out.println(Arrays.toString(input));
     }
 }
