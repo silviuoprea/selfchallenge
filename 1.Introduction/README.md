@@ -27,13 +27,18 @@ Java application that implements the following operations:
 - [x] a. Let n, p be two integers and C1,...,Cm a set of letters (the alphabet), all given as a command line arguments. Validate the arguments!
 - [x] b. Create an array of n strings (called words), each word containing exactly p characters from the given alphabet.
 - [x] c. Display on the screen the generated array.
-- [ ] d. Two words are neighbors if they have a common letter.
-- [ ] e. Create a boolean n x n matrix, representing the adjacency relation of the words.
-- [ ] f. Create a data structure (using arrays) that stores the neighbors of each word. Display this data structure on the screen.
-    - [ ] i. For larger n display the running time of the application in nanoseconds (DO NOT display the data structure!). Try n > 30_000. You might want to adjust the JVM Heap Space using the VM options -Xms4G -Xmx4G.
-- [ ] g. Launch the application from the command line, for example: java Lab1 100 7 A C G T.
+- [x] d. Two words are neighbors if they have a common letter.
+- [x] e. Create a boolean n x n matrix, representing the adjacency relation of the words.
+- [x] f. Create a data structure (using arrays) that stores the neighbors of each word. Display this data structure on the screen.
+    - [x] i. For larger n display the running time of the application in nanoseconds (DO NOT display the data structure!). Try n > 30_000. You might want to adjust the JVM Heap Space using the VM options -Xms4G -Xmx4G.
+- [x] g. Launch the application from the command line, for example: java Lab1 100 7 A C G T.
 
 #### Proof :
+![Optional](res/I1.b.png)
+<br>
+[Work](src/Introduction/Optional.java)
+<br>
+[Neighbours : Basic Data Structure](src/Introduction/Neighbours.java)
 
 ## 3. Bonus
 

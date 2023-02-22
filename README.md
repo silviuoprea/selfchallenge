@@ -17,9 +17,9 @@ Legend:
 * Full Optional = 40%
 * Full Bonus >= 40%
 
-![Week](https://progress-bar.dev/35/?title=Week-1)
+![Week](https://progress-bar.dev/66/?title=Week-1)
 - ![Compulsory](https://progress-bar.dev/100/?title=Compulsory)
-- ![Optional](https://progress-bar.dev/37/?title=Optional)
+- ![Optional](https://progress-bar.dev/100/?title=Optional)
 - ![Bonus](https://progress-bar.dev/00/?title=Bonus)
 
 [Assignment work](/1.Introduction)
