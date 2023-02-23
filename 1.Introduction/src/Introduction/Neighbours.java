@@ -1,6 +1,5 @@
 package Introduction;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Neighbours {
