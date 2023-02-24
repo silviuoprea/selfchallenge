@@ -24,9 +24,9 @@ Legend:
 
 [Assignment work](/1.Introduction)
 
-![Week](https://progress-bar.dev/40/?title=Week-2)
+![Week](https://progress-bar.dev/45/?title=Week-2)
 - ![Compulsory](https://progress-bar.dev/100/?title=Compulsory)
-- ![Optional](https://progress-bar.dev/50/?title=Optional)
+- ![Optional](https://progress-bar.dev/66/?title=Optional)
 - ![Bonus](https://progress-bar.dev/00/?title=Bonus)
 
 [Assignment work](/RoomAssignmentProject)
