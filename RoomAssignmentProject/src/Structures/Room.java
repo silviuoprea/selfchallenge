@@ -1,4 +1,10 @@
 package Structures;
+
+import javafx.util.Pair;
+
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Room class creates objects that register information about available rooms
  */
@@ -7,7 +13,8 @@ public abstract class Room {
     /**
      * Variables to capture relevant data like capacity, timeslots, room type and name
      */
-    private int cap, start, end;
+    private int cap;
+    Set<Pair<Integer, Integer>> timeSlots = new HashSet<>();
     private String roomName;
 
     public Room(String roomName, int cap) {
@@ -31,28 +38,25 @@ public abstract class Room {
         this.cap = cap;
     }
 
-    public int getStart() {
-        return start;
+    public Set<Pair<Integer, Integer>> getTimeSlots() {
+        return timeSlots;
     }
 
-    public void setStart(int start) {
-        this.start = start;
+    public void setTimeSlots(Set<Pair<Integer, Integer>> timeSlots) {
+        this.timeSlots = timeSlots;
     }
 
-    public int getEnd() {
-        return end;
+    public void addTimeSlot(Pair<Integer, Integer> timeSlot)
+    {
+        this.timeSlots.add(timeSlot);
     }
 
-    public void setEnd(int end) {
-        this.end = end;
-    }
 
     @Override
     public boolean equals(Object obj) {
         if(obj == null) return false;
         if(!(obj instanceof Room)) return false;
         Room newRoom = (Room) obj;
-        System.out.println(newRoom.roomName + " " + roomName + " check ?: " + newRoom.roomName.equals(roomName));
         return (newRoom.roomName.equals(roomName));
     }
 }

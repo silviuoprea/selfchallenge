@@ -31,5 +31,7 @@ public class Main {
         p1.setUpcomingEvents(C1);
         p1.setUpcomingEvents(C2);
         System.out.println(p1);
+        Solution solution = new Solution(p1);
+        System.out.println(solution);
     }
 }

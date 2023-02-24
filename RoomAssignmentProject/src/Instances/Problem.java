@@ -13,6 +13,13 @@ public class Problem {
         // empty constructor;
     }
 
+    /**
+     * Constructor to instantiate a model of the Room Assignment Problem
+     * <br>
+     * TO-DO: using overcomplicated code in constructor is a no-no, create separate methods for validation
+     * @param upcomingEvents a list of the upcoming events
+     * @param availableRooms a list of available rooms
+     */
     public Problem(List<Event> upcomingEvents, List<Room> availableRooms) {
 
         int sizeEvents = upcomingEvents.size(), sizeRooms = availableRooms.size();
