@@ -49,10 +49,20 @@ public class Event {
     public void setEnd(int end) {
         this.end = end;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == null) return false;
+        if(!(obj instanceof Event)) return false;
+        Event newEvent = (Event) obj;
+        return (newEvent.eventName.equals(eventName));
+    }
+
     /**
      * {@inheritDoc}
      * Prints the event object as per specification provided in the readme
      */
+
     @Override
     public String toString() {
         return eventName + "(" +

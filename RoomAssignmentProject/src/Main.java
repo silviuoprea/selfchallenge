@@ -1,6 +1,9 @@
+import Instances.Problem;
 import Structures.Event;
 import Structures.Room;
 import Structures.RoomType;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,5 +25,14 @@ public class Main {
         System.out.println(C403);
         System.out.println(C405);
         System.out.println(C309);
+        Problem p1 = new Problem(Arrays.asList(C1, C2, C1, C2, C1), Arrays.asList(C309, C405, C405));
+        p1.setAvailableRooms(C405);
+        p1.setAvailableRooms(C405);
+        System.out.println(p1.getUpcomingEvents());
+        System.out.println(p1.getAvailableRooms());
+        p1.setUpcomingEvents(C1);
+        p1.setUpcomingEvents(C2);
+        System.out.println(p1);
+
     }
 }

@@ -56,6 +56,14 @@ public class Room {
     public void setType(RoomType type) {
         this.type = type;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == null) return false;
+        if(!(obj instanceof Room)) return false;
+        Room newRoom = (Room) obj;
+        System.out.println(newRoom.roomName + " " + roomName + " check ?: " + newRoom.roomName.equals(roomName));
+        return (newRoom.roomName.equals(roomName));
+    }
 
     /**
      * {@inheritDoc}
