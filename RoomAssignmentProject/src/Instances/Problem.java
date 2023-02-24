@@ -52,7 +52,7 @@ public class Problem {
     }
 
     public void setUpcomingEvents(Event upcomingEvent) {
-        int size = upcomingEvents.size(), flag = 0;
+        int flag = 0;
         if(upcomingEvents.isEmpty())
         {
             upcomingEvents.add(upcomingEvent);
@@ -75,7 +75,7 @@ public class Problem {
     }
 
     public void setAvailableRooms(Room availableRoom) {
-        int size = availableRooms.size(), flag = 0;
+        int flag = 0;
         if(availableRooms.isEmpty())
         {
             availableRooms.add(availableRoom);
@@ -95,9 +95,8 @@ public class Problem {
 
     @Override
     public String toString() {
-        return "Situation {" +
+        return "Situation :  " +
                 "Upcoming Events=" + upcomingEvents +
-                ", Available Rooms=" + availableRooms +
-                '}';
+                ", Available Rooms=" + availableRooms;
     }
 }

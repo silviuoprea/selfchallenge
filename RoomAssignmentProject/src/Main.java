@@ -1,7 +1,5 @@
 import Instances.Problem;
-import Structures.Event;
-import Structures.Room;
-import Structures.RoomType;
+import Structures.*;
 
 import java.util.Arrays;
 
@@ -17,10 +15,10 @@ public class Main {
         System.out.println(L1);
         System.out.println(L2);
         System.out.println(L3);
-        Room C401 = new Room("401", 30, RoomType.LAB);
-        Room C403 = new Room("403", 30, RoomType.LAB);
-        Room C405 = new Room("405", 30, RoomType.LAB);
-        Room C309 = new Room("309", 100, RoomType.LECTURE_HALL);
+        Room C401 = new Lab("401", 30, OperatingSystems.WINDOWS);
+        Room C403 = new Lab("403", 30, OperatingSystems.MAC);
+        Room C405 = new Lab("405", 30, OperatingSystems.LINUX);
+        Room C309 = new LectureHall("309", 100, true);
         System.out.println(C401);
         System.out.println(C403);
         System.out.println(C405);
@@ -33,6 +31,5 @@ public class Main {
         p1.setUpcomingEvents(C1);
         p1.setUpcomingEvents(C2);
         System.out.println(p1);
-
     }
 }
