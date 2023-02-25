@@ -4,7 +4,7 @@ A network contains various nodes, such as computers, routers, switches, etc. <br
 <br>Some of them are identified using an IP-address. Some of them are able to store data, having a storage capacity, expressed in gigabytes (GB).
 <br>The time (measured in milliseconds) required for a network packet to go from one node to another is known.
 <br><br>Example: locations are: v1 (Computer A) v2 (Router A) v3 (Switch A) v4 (Switch B) v5 (Router B) v6 (Computer B).
-<br><br>![img.png](img.png)
+<br><br>![img.png](res/networkingExample.png)
 <br><br>
 Computers and routers are identified by IPs, while only computers are able to store data.
 <br><br>
