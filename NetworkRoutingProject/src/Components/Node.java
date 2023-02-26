@@ -27,7 +27,7 @@ public abstract class Node implements Comparable<Node>{
         this.cost = cost;
     }
 
-    public void setCost(Node node, int value) {
+    public void addCost(Node node, int value) {
         cost.put(node, value);
     }
 
