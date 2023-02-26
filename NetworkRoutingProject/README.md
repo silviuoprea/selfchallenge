@@ -1,4 +1,4 @@
-# II. The Network Routing Project
+# III. The Network Routing Project
 
 A network contains various nodes, such as computers, routers, switches, etc. <br>Nodes in the network have unique names and may have other common properties such as hardware (MAC) address, the location on a map, etc.
 <br>Some of them are identified using an IP-address. Some of them are able to store data, having a storage capacity, expressed in gigabytes (GB).
@@ -12,12 +12,13 @@ The main specifications of the application are:
 
 ## 1. Basic requirements
 
-- [ ] a. Create an object-oriented model of the problem. You should have at least the following classes Network, Node, Computer, Router, Switch. The natural ordering of the nodes is given by their names.
-- [ ] b. Create the interfaces Identifiable and Storage. The classes above must implement these interfaces accordingly.
-- [ ] c. The Network class will contain a List of nodes.
-- [ ] d. Create and print all the nodes in the network (without the time costs).
+- [x] a. Create an object-oriented model of the problem. You should have at least the following classes Network, Node, Computer, Router, Switch. The natural ordering of the nodes is given by their names.
+- [x] b. Create the interfaces Identifiable and Storage. The classes above must implement these interfaces accordingly.
+- [x] c. The Network class will contain a List of nodes.
+- [x] d. Create and print all the nodes in the network (without the time costs).
 
 #### Proof :
+![img.png](res/III1.png)
 
 ## 2. Expanding and reworking features
 
