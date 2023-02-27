@@ -6,9 +6,9 @@ import java.util.Map;
 
 public class Computer extends Node implements Identifiable, Storage {
     private String address;
-    private int storageCapacity;
+    private long storageCapacity;
 
-    public Computer(String name, Map<Node, Integer> cost, String address, int storageCapacity) {
+    public Computer(String name, Map<Node, Integer> cost, String address, long storageCapacity) {
         super(name, cost);
         this.address = address;
         this.storageCapacity = storageCapacity;
@@ -23,11 +23,20 @@ public class Computer extends Node implements Identifiable, Storage {
     }
 
     @Override
-    public int getStorageCapacity() {
+    public long getStorageCapacity(String size) {
+        return Storage.super.getStorageCapacity(size);
+    }
+
+    public long getStorageCapacity() {
         return storageCapacity;
     }
 
-    public void setStorageCapacity(int storageCapacity) {
+    @Override
+    public void setName(String name) {
+        super.setName(name);
+    }
+
+    public void setStorageCapacity(long storageCapacity) {
         this.storageCapacity = storageCapacity;
     }
 }

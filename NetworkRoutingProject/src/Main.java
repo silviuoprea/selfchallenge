@@ -18,6 +18,7 @@ public class Main {
         v4.addCost(v5, 30);
         v4.addCost(v6, 10);
         v5.addCost(v6, 20);
+        System.out.println(((Computer) v1).getStorageCapacity("Mega"));
         List<Node> nodeList = new ArrayList<>(Arrays.asList(v1, v2, v3, v4, v5, v6));
         Network basicNetwork = new Network(nodeList);
         System.out.println(basicNetwork);
