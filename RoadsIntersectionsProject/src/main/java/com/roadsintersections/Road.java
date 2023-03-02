@@ -4,7 +4,7 @@ import javafx.util.Pair;
 
 import java.util.*;
 
-public class Road {
+public class Road implements Comparable<Road>{
     String name;
     int length;
     List<Pair<Intersection, Intersection>> intersections;
@@ -42,5 +42,10 @@ public class Road {
 
     public void setIntersections(List<Pair<Intersection, Intersection>> intersections) {
         this.intersections = intersections;
+    }
+
+    @Override
+    public int compareTo(Road o) {
+        return Integer.compare(getLength(), o.getLength());
     }
 }

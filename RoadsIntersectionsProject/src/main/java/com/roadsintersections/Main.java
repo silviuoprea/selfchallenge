@@ -1,5 +1,6 @@
 package com.roadsintersections;
 
+import java.util.*;
 import java.util.stream.IntStream;
 
 public class Main {
@@ -12,6 +13,8 @@ public class Main {
         Road[] roads = IntStream.rangeClosed(0, 15)
                 .mapToObj(i -> new Road("e" + i, 2))
                 .toArray(Road[]::new);
+        List<Road> roadList = new ArrayList<>(Arrays.asList(roads));
+        roadList.sort(((u, v) -> u.getLength().compareTo(v.getLength())));
         roads[7].setLength(1);
         roads[8].setLength(1);
         roads[9].setLength(1);
