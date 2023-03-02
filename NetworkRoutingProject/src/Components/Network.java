@@ -1,8 +1,8 @@
 package Components;
-
+import Interfaces.*;
 import java.util.*;
 
-public class Network {
+public class Network implements Identifiable {
     private List<Node> nodes = new ArrayList<>();
 
     public Network(List<Node> nodes) {
@@ -18,6 +18,11 @@ public class Network {
     }
     public void addNodes(Node node) {
         nodes.add(node);
+    }
+
+    @Override
+    public String getAddress() {
+        return Identifiable.super.getAddress();
     }
 
     @Override
