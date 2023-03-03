@@ -6,6 +6,7 @@ A city hall wants to install surveillance cameras at all intersections in a city
 <br>The problem is to determine how to install the data cables (on which streets) such as the total cost is minimum.
 
 Example (the dots are the intersections, the lines are the streets)
+<br>
 ![img.png](src/main/resources/img.png)
 
 The main specifications of the application are:
@@ -16,8 +17,8 @@ The main specifications of the application are:
 - [x] a. Create a Maven project.
 - [x] b. Create an object-oriented model of the problem. Streets have names and lengths, intersections have names. A street joins two intersections.
 - [x] c. Create the streets and the intersections of the problem described in the example. Use streams in order to easily create the intersections.
-- [ ] d. Create a list of streets, using LinkedList implementation and sort it by the length, using a comparator expressed as a lambda-expression or method reference. Make sure all the objects are comparable.
-- [ ] e. Create a set of intersections, using a HashSet implementation. Verify the property that a Set does not contain duplicates.
+- [x] d. Create a list of streets, using LinkedList implementation and sort it by the length, using a comparator expressed as a lambda-expression or method reference. Make sure all the objects are comparable.
+- [x] e. Create a set of intersections, using a HashSet implementation. Verify the property that a Set does not contain duplicates.
 
 
 #### Proof :
