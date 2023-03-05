@@ -25,7 +25,7 @@ The main specifications of the application are:
 
 ## 2. Expanding and reworking features
 
-- [ ] a. Create a class that describes the city.
+- [x] a. Create a class that describes the city.
 - [ ] b. Using Java Stream API, write a query that display all the streets that are longer than a specified value and join at least 3 streets.
 - [ ] c. Use a third-party library in order to generate random fake names for intersections and streets.
 - [ ] d. You may use this package of JGraphT in order to solve the problem (or other library).

@@ -36,9 +36,9 @@ Legend:
 - ![Optional](https://progress-bar.dev/50/?title=Optional)
 - ![Bonus](https://progress-bar.dev/00/?title=Bonus)
 
-![Week](https://progress-bar.dev/20/?title=Week-4)
+![Week](https://progress-bar.dev/30/?title=Week-4)
 - ![Compulsory](https://progress-bar.dev/100/?title=Compulsory)
-- ![Optional](https://progress-bar.dev/00/?title=Optional)
+- ![Optional](https://progress-bar.dev/25/?title=Optional)
 - ![Bonus](https://progress-bar.dev/00/?title=Bonus)
 
 ![Week](https://progress-bar.dev/0/?title=Week-5)
