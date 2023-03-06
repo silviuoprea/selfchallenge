@@ -19,14 +19,6 @@ public abstract class Node implements Comparable<Node>{
         this.name = name;
     }
 
-    public Map<Node, Integer> getCost() {
-        return cost;
-    }
-
-    public void setCost(Map<Node, Integer> cost) {
-        this.cost = cost;
-    }
-
     public void addCost(Node node, int value) {
         cost.put(node, value);
     }
