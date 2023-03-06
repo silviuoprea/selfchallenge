@@ -18,9 +18,6 @@ public class Computer extends Node implements Identifiable, Storage {
     public String getAddress() {
         return address;
     }
-    public void setAddress(String address) {
-        this.address = address;
-    }
 
     @Override
     public long getStorageCapacity(String size) {
@@ -36,7 +33,4 @@ public class Computer extends Node implements Identifiable, Storage {
         super.setName(name);
     }
 
-    public void setStorageCapacity(long storageCapacity) {
-        this.storageCapacity = storageCapacity;
-    }
 }

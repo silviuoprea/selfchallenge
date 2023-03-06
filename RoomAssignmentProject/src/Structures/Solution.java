@@ -9,25 +9,9 @@ public class Solution {
     private Set<Pair<Room, Event>> pairs = new HashSet<>();
     private Problem problem;
 
-    public Problem getProblem() {
-        return problem;
-    }
-
-    public void setProblem(Problem problem) {
-        this.problem = problem;
-    }
-
     public Solution(Problem problem) {
         this.problem = problem;
         resolveProblem(problem);
-    }
-
-    public Set<Pair<Room, Event>> getPairs() {
-        return resolveProblem(problem);
-    }
-
-    public void setPairs(Set<Pair<Room, Event>> pairs) {
-        this.pairs = pairs;
     }
 
     /**

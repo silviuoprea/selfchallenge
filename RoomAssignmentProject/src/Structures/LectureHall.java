@@ -8,14 +8,6 @@ public class LectureHall extends Room{
         this.hasProjector = hasProjector;
     }
 
-    public boolean isHasProjector() {
-        return hasProjector;
-    }
-
-    public void setHasProjector(boolean hasProjector) {
-        this.hasProjector = hasProjector;
-    }
-
     @Override
     public String toString() {
         return "LectureHall(" + getRoomName() + ", cap=" + getCap() +

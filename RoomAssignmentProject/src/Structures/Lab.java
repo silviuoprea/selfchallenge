@@ -8,14 +8,6 @@ public class Lab extends Room{
         this.operatingSystem = operatingSystem;
     }
 
-    public OperatingSystems getOperatingSystem() {
-        return operatingSystem;
-    }
-
-    public void setOperatingSystem(OperatingSystems operatingSystem) {
-        this.operatingSystem = operatingSystem;
-    }
-
     @Override
     public String toString() {
         return "Lab(" + getRoomName() + ", cap=" + getCap() +

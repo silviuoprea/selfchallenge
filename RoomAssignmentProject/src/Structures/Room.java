@@ -26,24 +26,12 @@ public abstract class Room {
         return roomName;
     }
 
-    public void setRoomName(String roomName) {
-        this.roomName = roomName;
-    }
-
     public int getCap() {
         return cap;
     }
 
-    public void setCap(int cap) {
-        this.cap = cap;
-    }
-
     public Set<Pair<Integer, Integer>> getTimeSlots() {
         return timeSlots;
-    }
-
-    public void setTimeSlots(Set<Pair<Integer, Integer>> timeSlots) {
-        this.timeSlots = timeSlots;
     }
 
     public void addTimeSlot(Pair<Integer, Integer> timeSlot)

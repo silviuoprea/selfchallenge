@@ -9,17 +9,6 @@ public class Network implements Identifiable {
         this.nodes = nodes;
     }
 
-    public List<Node> getNodes() {
-        return nodes;
-    }
-
-    public void setNodes(List<Node> nodes) {
-        this.nodes = nodes;
-    }
-    public void addNodes(Node node) {
-        nodes.add(node);
-    }
-
     @Override
     public String getAddress() {
         return Identifiable.super.getAddress();

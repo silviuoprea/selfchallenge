@@ -18,36 +18,12 @@ public class Event {
         this.end = end;
     }
 
-    public String getEventName() {
-        return eventName;
-    }
-
-    public void setEventName(String eventName) {
-        this.eventName = eventName;
-    }
-
-    public int getSize() {
-        return size;
-    }
-
-    public void setSize(int size) {
-        this.size = size;
-    }
-
     public int getStart() {
         return start;
     }
 
     public int getEnd() {
         return end;
-    }
-
-    public void setStart(int start) {
-        this.start = start;
-    }
-
-    public void setEnd(int end) {
-        this.end = end;
     }
 
     @Override
