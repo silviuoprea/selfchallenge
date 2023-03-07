@@ -7,14 +7,14 @@ import java.util.*;
 public class Road implements Comparable<Road>{
     String name;
     int length;
-    List<Pair<Intersection, Intersection>> intersections;
+    Set<Intersection> intersections = new HashSet<>();
 
     public Road(String name, int length) {
         this.name = name;
         this.length = length;
     }
 
-    public Road(String name, int length, List<Pair<Intersection, Intersection>> intersections) {
+    public Road(String name, int length, Set<Intersection> intersections) {
         this.name = name;
         this.length = length;
         this.intersections = intersections;
@@ -36,12 +36,12 @@ public class Road implements Comparable<Road>{
         this.length = length;
     }
 
-    public List<Pair<Intersection, Intersection>> getIntersections() {
+    public Set<Intersection> getIntersections() {
         return intersections;
     }
 
-    public void setIntersections(List<Pair<Intersection, Intersection>> intersections) {
-        this.intersections = intersections;
+    public void setIntersections(Intersection intersections) {
+        this.intersections.add(intersections);
     }
 
     @Override
