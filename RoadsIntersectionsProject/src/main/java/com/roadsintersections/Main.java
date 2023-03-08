@@ -1,4 +1,5 @@
 package com.roadsintersections;
+import net.datafaker.Faker;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -10,11 +11,12 @@ public class Main {
 
         System.out.println("Hello world!");
         int value = 0;
+        Faker faker = new Faker();
         Set<Intersection> nodes = IntStream.rangeClosed(0, 8)
-                .mapToObj(i -> new Intersection("v" + i) )
+                .mapToObj(i -> new Intersection(faker.onePiece().akumasNoMi()))
                 .collect(Collectors.toSet());
         LinkedList<Road> roads = IntStream.rangeClosed(0, 15)
-                .mapToObj(i -> new Road("e" + i, 2))
+                .mapToObj(i -> new Road(faker.address().streetAddress(), 2))
                 .collect(Collectors.toCollection(LinkedList::new));
         Intersection[] toAdd = nodes.toArray(new Intersection[0]);
         roads.get(0).setIntersections(toAdd[0]);
