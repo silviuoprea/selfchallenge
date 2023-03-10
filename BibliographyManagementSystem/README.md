@@ -3,7 +3,7 @@
 <br>Write an application that can manage a catalog of resources (bibliographic references), such as books, articles, etc.
 <br>These resources might be represented by files in the local file system or a Web address. Apart from a unique
 <br>identifier, a title and its location, a resource may have additional properties such as author(s), what year it was
-<br>publihsed, description, etc.
+<br>published, description, etc.
 
 <br>
 Example of entries in the catalog might be:
@@ -24,10 +24,11 @@ Example of entries in the catalog might be:
 
 
 #### Proof :
-
+<br>![img.png](src/main/resources/jsonProof.png)
+<br>
 ## 2. Expanding and reworking features
 
-- [ ] a. Represent the commands using classes instead of methods. Use an interface or an abstract class in order to desribe a generic command.
+- [ ] a. Represent the commands using classes instead of methods. Use an interface or an abstract class in order to describe a generic command.
 - [ ] b. Implement the commands load, list, view, report (create the classes AddCommand, ListCommand, etc.).
   - [ ] i. list: prints the list of items on the screen;
   - [ ] ii. view: opens an item using the native operating system application (see the Desktop class);
