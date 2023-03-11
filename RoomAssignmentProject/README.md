@@ -45,6 +45,8 @@ The main specifications of the application are:
 
 #### Proof :
 
+![img.png](res/II2.png)
+
 ## 3. Advanced features
 
 - [ ] a. Use the time package in order to describe the start and the end time of the events.
