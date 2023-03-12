@@ -28,7 +28,7 @@ Example of entries in the catalog might be:
 <br>
 ## 2. Expanding and reworking features
 
-- [ ] a. Represent the commands using classes instead of methods. Use an interface or an abstract class in order to describe a generic command.
+- [x] a. Represent the commands using classes instead of methods. Use an interface or an abstract class in order to describe a generic command.
 - [ ] b. Implement the commands load, list, view, report (create the classes AddCommand, ListCommand, etc.).
   - [ ] i. list: prints the list of items on the screen;
   - [ ] ii. view: opens an item using the native operating system application (see the Desktop class);
