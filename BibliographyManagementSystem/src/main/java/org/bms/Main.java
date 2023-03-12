@@ -13,7 +13,10 @@ public class Main {
         Item article = new Item("java17", "The Java Language Specification", "https://docs.oracle.com/javase/specs/jls/se17/html/index.html");
         catalog.add(book);
         catalog.add(article);
-        CatalogUtil.save(catalog, "BibliographyManagementSystem\\src\\main\\resources\\catalog.json");
-        CatalogUtil.load("BibliographyManagementSystem\\src\\main\\resources\\catalog.json");
+        Command loadCommand = new LoadCommand("BibliographyManagementSystem\\src\\main\\resources\\catalog.json");
+        Command saveCommand = new SaveCommand(catalog, "BibliographyManagementSystem\\src\\main\\resources\\catalog.json");
+
+        ((SaveCommand) saveCommand).save(catalog,"BibliographyManagementSystem\\src\\main\\resources\\catalog.json");
+        catalog = ((LoadCommand) loadCommand).load("BibliographyManagementSystem\\src\\main\\resources\\catalog.json");
     }
 }
