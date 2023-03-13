@@ -1,6 +1,7 @@
-package org.bms;
+package Commands;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import Objects.Catalog;
 
 import java.io.File;
 import java.io.IOException;

@@ -30,11 +30,11 @@ Example of entries in the catalog might be:
 
 - [x] a. Represent the commands using classes instead of methods. Use an interface or an abstract class in order to describe a generic command.
 - [ ] b. Implement the commands load, list, view, report (create the classes AddCommand, ListCommand, etc.).
-  - [ ] i. list: prints the list of items on the screen;
-  - [ ] ii. view: opens an item using the native operating system application (see the Desktop class);
-  - [ ] iii. report: creates (and opens) an HTML report representing the content of the catalog.
+  - [x] i. list: prints the list of items on the screen;
+  - [x] ii. view: opens an item using the native operating system application (see the Desktop class);
+  - [x] iii. report: creates (and opens) an HTML report representing the content of the catalog.
 <br>Use a template engine such as FreeMarker or Velocity, in order to create the HTML report.
-  - [ ] Use Apache Tika in order to extract metadata from your catalog items and implement the command info in order to display them.
+  - [x] Use Apache Tika in order to extract metadata from your catalog items and implement the command info in order to display them.
 - [ ] c. The application will signal invalid date or the commands that are not valid using custom exceptions.
 - [ ] d. The final form of the application will be an executable JAR archive. Identify the generated archive and launch the application from the console, using the JAR.
 

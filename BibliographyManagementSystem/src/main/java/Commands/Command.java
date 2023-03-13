@@ -1,4 +1,7 @@
-package org.bms;
+package Commands;
+
+import Objects.Catalog;
+import Objects.Item;
 
 public abstract class Command{
     protected Item item;

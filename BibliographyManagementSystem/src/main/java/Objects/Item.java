@@ -1,4 +1,4 @@
-package org.bms;
+package Objects;
 
 import java.io.Serializable;
 import java.util.*;
@@ -46,5 +46,11 @@ public class Item implements Serializable {
 
     public void addTag(String key, Object obj) {
         tags.put(key, obj);
+    }
+
+    @Override
+    public String toString() {
+        return "\"" + title + "\"" +
+                " : \"" + location + "\"";
     }
 }
