@@ -1,0 +1,1 @@
+Number of books is $totalBooks.size() <br> <br> #foreach( $books in $totalBooks ) <br>Book : $books.title can be found here : $books.location #end
