@@ -18,7 +18,7 @@ public class ReportCommand extends Command{
     public ReportCommand(Catalog catalog) {
         super(catalog);
     }
-    public void generateReport(Catalog catalog) throws IOException {
+    public void generateReport(Catalog catalog, String path) {
         VelocityEngine velocityEngine = new VelocityEngine();
         VelocityContext context = new VelocityContext();
         ArrayList<Object> list = new ArrayList<>();
@@ -28,7 +28,7 @@ public class ReportCommand extends Command{
         String resPath = "BibliographyManagementSystem\\src\\main\\resources\\";
         velocityEngine.init();
 
-        Template t = velocityEngine.getTemplate(resPath + "index.vm");
+        Template t = velocityEngine.getTemplate("index.vm");
         for(Item item:catalog.getItems())
         {
             list.add(new HashMap<String, String>(){{put("title", item.getTitle());put("location", item.getLocation());}});
@@ -37,8 +37,14 @@ public class ReportCommand extends Command{
             System.out.println(item);
         context.put("totalBooks", list);
         t.merge( context, writer );
-        objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(resPath + "report.html"), writer.toString());
-        File newFile = new File(resPath + "report.html");
-        desktop.open(newFile);
+        File f;
+        try {
+            f = new File(path);
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(f, writer.toString());
+            desktop.open(f);
+        } catch (IOException e) {
+            System.out.println("Unexpected error reading the file!");
+            e.printStackTrace();
+        }
     }
 }
