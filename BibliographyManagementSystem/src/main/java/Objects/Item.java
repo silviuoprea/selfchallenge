@@ -20,32 +20,16 @@ public class Item implements Serializable {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getTitle() {
         return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
     }
 
     public String getLocation() {
         return location;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
     public Map<String, Object> getTags() {
         return tags;
-    }
-
-    public void addTag(String key, Object obj) {
-        tags.put(key, obj);
     }
 
     @Override

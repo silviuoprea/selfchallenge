@@ -13,10 +13,6 @@ public abstract class Command{
         this.item = item;
     }
 
-    protected Command(Item item){
-        this.item = item;
-    }
-
     protected Command(Catalog catalog){
         this.catalog = catalog;
     }
@@ -28,30 +24,5 @@ public abstract class Command{
 
     protected Command(String path){
         this.path = path;
-    }
-    protected Command(){}
-
-    public void setItem(Item item) {
-        this.item = item;
-    }
-
-    public void setCatalog(Catalog catalog) {
-        this.catalog = catalog;
-    }
-
-    public void setPath(String path) {
-        this.path = path;
-    }
-
-    public Item getItem() {
-        return item;
-    }
-
-    public Catalog getCatalog() {
-        return catalog;
-    }
-
-    public String getPath() {
-        return path;
     }
 }

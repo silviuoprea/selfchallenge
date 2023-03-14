@@ -12,10 +12,11 @@ public class Main {
         Main app = new Main();
         app.testCreateSave();
     }
-    private void testCreateSave() throws IOException, TikaException, SAXException {
+    private void testCreateSave() throws TikaException, SAXException {
         Catalog catalog = new Catalog("MyRefs");
         Item book = new Item("book1", "The Book", "BibliographyManagementSystem/src/main/resources/book.nobook");
         Item article = new Item("java17", "The Java Language Specification", "https://docs.oracle.com/javase/specs/jls/se17/html/index.html");
+        String reportPath = "BibliographyManagementSystem\\src\\main\\resources\\report.html";
         catalog.add(book);
         catalog.add(article);
         Command loadCommand = new LoadCommand("BibliographyManagementSystem\\src\\main\\resources\\catalog.json");
@@ -24,11 +25,11 @@ public class Main {
         Command infoCommand = new InfoCommand(catalog);
         Command viewCommand = new ViewCommand(catalog, catalog.getItems().get(0));
         Command reportCommand = new ReportCommand(catalog);
-        ((ReportCommand) reportCommand).generateReport(catalog);
+        ((ReportCommand) reportCommand).generateReport(catalog, "check");
         ((ViewCommand) viewCommand).view(catalog, catalog.getItems().get(0));
         ((ListCommand) listCommand).list(catalog);
-        ((InfoCommand) infoCommand).getMetaData(catalog);
+        ((InfoCommand) infoCommand).getMetaData(catalog, "check");
         ((SaveCommand) saveCommand).save(catalog,"BibliographyManagementSystem\\src\\main\\resources\\catalog.json");
-        catalog = ((LoadCommand) loadCommand).load("BibliographyManagementSystem\\src\\main\\resources\\catalog.json");
+        catalog = ((LoadCommand) loadCommand).load("BibliographyManagementSystem\\src\\main\\resources\\catalog.json1");
     }
 }

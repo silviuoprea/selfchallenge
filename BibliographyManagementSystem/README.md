@@ -35,10 +35,11 @@ Example of entries in the catalog might be:
   - [x] iii. report: creates (and opens) an HTML report representing the content of the catalog.
 <br>Use a template engine such as FreeMarker or Velocity, in order to create the HTML report.
   - [x] Use Apache Tika in order to extract metadata from your catalog items and implement the command info in order to display them.
-- [ ] c. The application will signal invalid date or the commands that are not valid using custom exceptions.
-- [ ] d. The final form of the application will be an executable JAR archive. Identify the generated archive and launch the application from the console, using the JAR.
+- [x] c. The application will signal invalid date or the commands that are not valid using custom exceptions.
+- [x] d. The final form of the application will be an executable JAR archive. Identify the generated archive and launch the application from the console, using the JAR.
 
 #### Proof :
+![img.png](src/main/resources/img.png)
 
 ## 3. Advanced features
 
