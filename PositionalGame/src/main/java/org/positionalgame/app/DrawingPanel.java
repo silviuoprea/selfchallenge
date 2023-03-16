@@ -2,6 +2,8 @@ package org.positionalgame.app;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 
 public class DrawingPanel extends JPanel {
@@ -32,6 +34,27 @@ public class DrawingPanel extends JPanel {
         this.boardWidth = (cols - 1) * cellWidth;
         this.boardHeight = (rows - 1) * cellHeight;
         setPreferredSize(new Dimension(canvasWidth, canvasHeight));
+        this.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                drawStone(e.getX(), e.getY());
+                repaint();
+            }
+        });
+    }
+
+    private void drawStone(int x, int y) {
+        offscreen.setColor(Color.BLUE);
+
+        int copyOfx = x / cellWidth;
+        int copyOfy = y / cellHeight;
+
+        int a = padX + copyOfx * cellWidth;
+        int b = padY + copyOfy * cellHeight;
+
+        if (x <= a + stoneSize / 2 && x >= a - stoneSize / 2 && y <= b + stoneSize/2 && y>= b-stoneSize/2)
+            offscreen.fillOval(a - stoneSize / 2, b - stoneSize / 2, stoneSize, stoneSize);
+
     }
     private void createOffscreenImage() {
         image = new BufferedImage(canvasWidth, canvasHeight, BufferedImage.TYPE_INT_ARGB);
