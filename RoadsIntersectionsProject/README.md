@@ -7,7 +7,7 @@ A city hall wants to install surveillance cameras at all intersections in a city
 
 Example (the dots are the intersections, the lines are the streets)
 <br>
-![img.png](src/main/resources/img.png)
+![img.png](src/main/resources/problemTarget.png)
 
 The main specifications of the application are:
 
@@ -22,7 +22,7 @@ The main specifications of the application are:
 
 
 #### Proof :
-
+![img.png](src/main/resources/proofPoint1.png)
 ## 2. Expanding and reworking features
 
 - [x] a. Create a class that describes the city.
@@ -31,6 +31,7 @@ The main specifications of the application are:
 - [ ] d. You may use this package of JGraphT in order to solve the problem (or other library).
 
 #### Proof :
+![img.png](src/main/resources/proofPoint2.png)
 
 ## 3. Advanced features
 
