@@ -21,8 +21,7 @@
 
 
 #### Proof :
-<br>
-
+![img_1.png](src/main/resources/point1_proof.png)
 ## 2. Expanding and reworking features
 
 - [x] a. Create the object-oriented model.
