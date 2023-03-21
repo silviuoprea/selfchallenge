@@ -46,14 +46,14 @@ Legend:
 - ![Optional](https://progress-bar.dev/100/?title=Optional)
 - ![Bonus](https://progress-bar.dev/00/?title=Bonus)
 
-![Week](https://progress-bar.dev/20/?title=Week-6)
+![Week](https://progress-bar.dev/36/?title=Week-6)
 - ![Compulsory](https://progress-bar.dev/100/?title=Compulsory)
-- ![Optional](https://progress-bar.dev/00/?title=Optional)
+- ![Optional](https://progress-bar.dev/40/?title=Optional)
 - ![Bonus](https://progress-bar.dev/00/?title=Bonus)
 
-![Week](https://progress-bar.dev/0/?title=Week-7)
-- ![Compulsory](https://progress-bar.dev/00/?title=Compulsory)
-- ![Optional](https://progress-bar.dev/00/?title=Optional)
+![Week](https://progress-bar.dev/10/?title=Week-7)
+- ![Compulsory](https://progress-bar.dev/25/?title=Compulsory)
+- ![Optional](https://progress-bar.dev/16/?title=Optional)
 - ![Bonus](https://progress-bar.dev/00/?title=Bonus)
 
 ![Week](https://progress-bar.dev/0/?title=Week-8)
