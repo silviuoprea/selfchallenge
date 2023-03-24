@@ -8,7 +8,7 @@ Write an application that allows to connect to a relational database by using JD
 ## 1. Basic requirements
 
 
-- [ ] a. Create a relational database using any RDBMS (Oracle, Postgres, MySql, Java DB, etc.).
+- [x] a. Create a relational database using any RDBMS (Oracle, Postgres, MySql, Java DB, etc.).
 - [ ] b. Write an SQL script that will create the following tables:
   - [ ] i. countries: id, name, code, continent
   - [ ] ii. continents: id, name
