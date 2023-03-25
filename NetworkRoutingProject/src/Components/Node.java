@@ -4,11 +4,10 @@ import java.util.*;
 
 public abstract class Node implements Comparable<Node>{
     private String name;
-    private Map<Node, Integer> cost = new HashMap<>();
+    private final Map<Node, Integer> cost = new HashMap<>();
 
-    public Node(String name, Map<Node, Integer> cost) {
+    public Node(String name) {
         this.name = name;
-        this.cost = cost;
     }
 
     public String getName() {
