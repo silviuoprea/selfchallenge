@@ -5,11 +5,11 @@ import Interfaces.*;
 import java.util.Map;
 
 public class Computer extends Node implements Identifiable, Storage {
-    private String address;
-    private long storageCapacity;
+    private final String address;
+    private final long storageCapacity;
 
-    public Computer(String name, Map<Node, Integer> cost, String address, long storageCapacity) {
-        super(name, cost);
+    public Computer(String name, String address, long storageCapacity) {
+        super(name);
         this.address = address;
         this.storageCapacity = storageCapacity;
     }
