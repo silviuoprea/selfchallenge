@@ -10,6 +10,7 @@ public class MainFrame extends JFrame {
     ConfigPanel configPanel;
     ControlPanel controlPanel;
     DrawingPanel canvas;
+    GameLogic gameLogic;
 
     public MainFrame() {
         super("Positional Game");
@@ -26,11 +27,14 @@ public class MainFrame extends JFrame {
         add(controlPanel, SOUTH);
         canvas.setPreferredSize(new Dimension(400, 400));
         pack();
+        gameLogic = new GameLogic(this);
     }
     public void createGame() {
         canvas = new DrawingPanel(this);
         add(canvas, CENTER);
         pack();
+
+        gameLogic = new GameLogic(this);
     }
 }
 
