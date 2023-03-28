@@ -52,6 +52,7 @@ public class Database {
 
         Statement stmt = getConnection().createStatement();
         stmt.execute(sqlCreate);
+        connection.commit();
     }
 }
 
