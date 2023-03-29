@@ -8,9 +8,9 @@ public class Main {
 
         try
         {
-            Database.getConnection().commit();
             Database.createTable("countries", "id", "name", "code", "continent");
             Database.createTable("continents", "id", "name", "", "");
+            Database.getConnection().commit();
             Database.getConnection().close();
 
         } catch (SQLException e) {
