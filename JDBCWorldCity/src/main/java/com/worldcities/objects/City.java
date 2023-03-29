@@ -1,6 +1,6 @@
-package com.worldcities;
+package com.worldcities.objects;
 
-public class City extends Location{
+public class City extends Location {
     final Country country;
     final String capital;
     final int latitude, longitude;
@@ -26,5 +26,9 @@ public class City extends Location{
 
     public int getLongitude() {
         return longitude;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

@@ -50,7 +50,7 @@ public class Database {
                         + " (id VARCHAR(10), name VARCHAR(50), code VARCHAR(10), continent VARCHAR(20))";
                 break;
             }
-            case "cities":{
+            case "worldcities":{
                 sqlCreate = "CREATE TABLE IF NOT EXISTS " + tableName
                         + " (id VARCHAR(10), name VARCHAR(50), country VARCHAR(10), capital VARCHAR(20), latitude VARCHAR(20), longitude VARCHAR(20))";
                 break;
