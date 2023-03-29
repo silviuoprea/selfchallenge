@@ -1,6 +1,6 @@
-package com.worldcities;
+package com.worldcities.objects;
 
-public class Country extends Location{
+public class Country extends Location {
     final String code;
     final Continent continent;
     public Country(int id, String name, String code1, Continent continent1) {
@@ -15,5 +15,9 @@ public class Country extends Location{
 
     public Continent getContinent() {
         return continent;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

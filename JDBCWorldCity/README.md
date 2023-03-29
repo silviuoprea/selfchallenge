@@ -14,7 +14,7 @@ Write an application that allows to connect to a relational database by using JD
   - [x] ii. continents: id, name
 - [x] c. Update pom.xml, in order to add the database driver to the project libraries.
 - [x] d. Create a singleton class in order to manage a connection to the database.
-- [ ] e. Create DAO classes that offer methods for creating countries and continents, and finding them by their ids and names;
+- [x] e. Create DAO classes that offer methods for creating countries and continents, and finding them by their ids and names;
 - [ ] f. Implement a simple test using your classes.
 
 
