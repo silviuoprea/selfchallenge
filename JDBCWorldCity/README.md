@@ -9,11 +9,11 @@ Write an application that allows to connect to a relational database by using JD
 
 
 - [x] a. Create a relational database using any RDBMS (Oracle, Postgres, MySql, Java DB, etc.).
-- [ ] b. Write an SQL script that will create the following tables:
-  - [ ] i. countries: id, name, code, continent
-  - [ ] ii. continents: id, name
-- [ ] c. Update pom.xml, in order to add the database driver to the project libraries.
-- [ ] d. Create a singleton class in order to manage a connection to the database.
+- [x] b. Write an SQL script that will create the following tables:
+  - [x] i. countries: id, name, code, continent
+  - [x] ii. continents: id, name
+- [x] c. Update pom.xml, in order to add the database driver to the project libraries.
+- [x] d. Create a singleton class in order to manage a connection to the database.
 - [ ] e. Create DAO classes that offer methods for creating countries and continents, and finding them by their ids and names;
 - [ ] f. Implement a simple test using your classes.
 

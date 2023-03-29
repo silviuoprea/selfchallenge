@@ -16,7 +16,8 @@ public class Database {
     }
 
     public static Connection getConnection() throws SQLException {
-        createConnection();
+        if(connection == null)
+            createConnection();
         return connection;
     }
 
@@ -35,24 +36,23 @@ public class Database {
 
     public static void createTable(String tableName, String id, String name, String code, String continent) throws SQLException {
         String sqlCreate;
+        Connection connection1 = getConnection();
         if(code.equals(""))
         {
             sqlCreate = "CREATE TABLE IF NOT EXISTS " + tableName
-                    + "  (" + id + "           VARCHAR(10),"
-                    + "   " + name + "         VARCHAR(50))";
+                    + " (" + id + " VARCHAR(10),"
+                    + " " + name + " VARCHAR(50))";
         }
         else
         {
             sqlCreate = "CREATE TABLE IF NOT EXISTS " + tableName
-                    + "  (" + id + "           VARCHAR(10),"
-                    + "   " + name + "         VARCHAR(50),"
-                    + "   "+ code + "          VARCHAR(10),"
-                    + "   "+ continent + "     VARCHAR(20))";
+                    + " (" + id + " VARCHAR(10),"
+                    + " " + name + " VARCHAR(50),"
+                    + " "+ code + " VARCHAR(10),"
+                    + " "+ continent + " VARCHAR(20))";
         }
-
-        Statement stmt = getConnection().createStatement();
+        Statement stmt = connection1.createStatement();
         stmt.execute(sqlCreate);
-        connection.commit();
     }
 }
 
