@@ -34,22 +34,28 @@ public class Database {
         connection.close();
     }
 
-    public static void createTable(String tableName, String id, String name, String code, String continent) throws SQLException {
-        String sqlCreate;
+    public static void createTable(String tableName) throws SQLException {
+        String sqlCreate = null;
         Connection connection1 = getConnection();
-        if(code.equals(""))
+        switch(tableName)
         {
-            sqlCreate = "CREATE TABLE IF NOT EXISTS " + tableName
-                    + " (" + id + " VARCHAR(10),"
-                    + " " + name + " VARCHAR(50))";
-        }
-        else
-        {
-            sqlCreate = "CREATE TABLE IF NOT EXISTS " + tableName
-                    + " (" + id + " VARCHAR(10),"
-                    + " " + name + " VARCHAR(50),"
-                    + " "+ code + " VARCHAR(10),"
-                    + " "+ continent + " VARCHAR(20))";
+            case "continents": {
+                sqlCreate = "CREATE TABLE IF NOT EXISTS " + tableName
+                        + " (id VARCHAR(10), name VARCHAR(50))";
+                break;
+            }
+            case "countries":
+            {
+                sqlCreate = "CREATE TABLE IF NOT EXISTS " + tableName
+                        + " (id VARCHAR(10), name VARCHAR(50), code VARCHAR(10), continent VARCHAR(20))";
+                break;
+            }
+            case "cities":{
+                sqlCreate = "CREATE TABLE IF NOT EXISTS " + tableName
+                        + " (id VARCHAR(10), name VARCHAR(50), country VARCHAR(10), capital VARCHAR(20), latitude VARCHAR(20), longitude VARCHAR(20))";
+                break;
+            }
+                    
         }
         Statement stmt = connection1.createStatement();
         stmt.execute(sqlCreate);

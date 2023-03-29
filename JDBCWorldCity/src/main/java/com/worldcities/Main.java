@@ -8,8 +8,9 @@ public class Main {
 
         try
         {
-            Database.createTable("countries", "id", "name", "code", "continent");
-            Database.createTable("continents", "id", "name", "", "");
+            Database.createTable("cities");
+            Database.createTable("countries");
+            Database.createTable("continents");
             Database.getConnection().commit();
             Database.getConnection().close();
 
