@@ -12,7 +12,7 @@ public class Main {
 
         try
         {
-            Database.createTable("worldcities");
+            Database.createTable("cities");
             Database.createTable("countries");
             Database.createTable("continents");
             newContinent = new ContinentDAO();
