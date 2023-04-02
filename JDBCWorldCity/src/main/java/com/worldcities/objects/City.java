@@ -2,9 +2,9 @@ package com.worldcities.objects;
 
 public class City extends Location {
     final Country country;
-    final String capital;
-    final int latitude, longitude;
-    public City(int id, String name, Country country, String capital1, int latitude1, int longitude1) {
+    final boolean capital;
+    final double latitude, longitude;
+    public City(int id, String name, Country country, boolean capital1, double latitude1, double longitude1) {
         super(id, name);
         this.country = country;
         this.capital = capital1;
@@ -16,15 +16,15 @@ public class City extends Location {
         return country;
     }
 
-    public String isCapital() {
+    public boolean isCapital() {
         return capital;
     }
 
-    public int getLatitude() {
+    public double getLatitude() {
         return latitude;
     }
 
-    public int getLongitude() {
+    public double getLongitude() {
         return longitude;
     }
 
